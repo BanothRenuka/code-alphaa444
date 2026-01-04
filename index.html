@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Learnify – Online Learning Platform</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <h1>🎓 Learnify</h1>
+    <p>Learn anytime, anywhere</p>
+</header>
+
+<nav class="nav">
+    <button onclick="showPage('home')">Home</button>
+    <button onclick="showPage('courses')">Courses</button>
+    <button onclick="showPage('profile')">Profile</button>
+</nav>
+
+<!-- HOME PAGE -->
+<section id="home" class="page active">
+    <h2>Welcome Back 👋</h2>
+    <p>Continue your learning journey</p>
+
+    <div class="card">
+        <h3>UX Design Basics</h3>
+        <p>Progress: 60%</p>
+        <button onclick="showPage('courses')">Continue</button>
+    </div>
+</section>
+
+<!-- COURSES PAGE -->
+<section id="courses" class="page">
+    <h2>Available Courses</h2>
+
+    <div class="card">
+        <h3>UI/UX Design</h3>
+        <p>Beginner to Advanced</p>
+        <button>Enroll</button>
+    </div>
+
+    <div class="card">
+        <h3>Web Development</h3>
+        <p>HTML, CSS, JavaScript</p>
+        <button>Enroll</button>
+    </div>
+</section>
+
+<!-- PROFILE PAGE -->
+<section id="profile" class="page">
+    <h2>Your Profile</h2>
+    <p>Name: Student User</p>
+    <p>Enrolled Courses: 3</p>
+
+    <button class="logout" onclick="logout()">Logout</button>
+</section>
+
+<!-- DESIGN EXPLANATION -->
+<section class="explanation">
+    <h2>📘 Design Explanation</h2>
+
+    <h3>1. Project Overview</h3>
+    <p>
+        Learnify is an online learning platform designed to help users easily
+        discover, enroll, and continue courses. The prototype focuses on clarity,
+        accessibility, and simple navigation.
+    </p>
+
+    <h3>2. User Flow</h3>
+    <p>
+        Users land on the Home page, view their progress, explore courses,
+        and manage their profile. Navigation buttons allow quick switching
+        between pages, simulating a real clickable prototype.
+    </p>
+
+    <h3>3. UI/UX Principles Used</h3>
+    <ul>
+        <li>Clear navigation and layout hierarchy</li>
+        <li>Consistent colors and typography</li>
+        <li>Large buttons for easy interaction</li>
+        <li>Minimal content per screen</li>
+    </ul>
+
+    <h3>4. Conclusion</h3>
+    <p>
+        This prototype demonstrates a complete mini-project including layout,
+        interaction, and usability. It can be recreated in Figma or Adobe XD
+        using the same structure and flow.
+    </p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
